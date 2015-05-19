@@ -1,7 +1,7 @@
 package com.itesoft.ml;
 
 /**
- * Created by jfi on 18/05/2015.
+ * @author jfi
  */
 public class ApplicationException extends Exception {
     

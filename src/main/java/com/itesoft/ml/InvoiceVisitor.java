@@ -1,20 +1,35 @@
 package com.itesoft.ml;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 /**
- * Created by jfi on 18/05/2015.
+ * @author jfi
  */
 public class InvoiceVisitor implements Visitor {
 
 
     @Override
-    public void visit(InvoiceFileImporter invoiceFileImporter) throws ApplicationException {
+    public void visit(FileImporter invoiceFileImporter) throws ApplicationException {
+
+
 
     }
 
     @Override
-    public void visit(BatchFileImporter fileImporter) throws ApplicationException {
-        throw new NotImplementedException();
+    public void doParse(FileImporter fileImporter) throws ParseFileException {
+
+    }
+
+    @Override
+    public void doValidate(FileImporter fileImporter) throws ValidationException {
+
+    }
+
+    @Override
+    public void doCorrect(FileImporter fileImporter) throws CorrectionException {
+
+    }
+
+    @Override
+    public void doImport(FileImporter fileImporter) throws ImportException {
+
     }
 }

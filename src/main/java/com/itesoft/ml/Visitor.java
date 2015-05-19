@@ -1,13 +1,16 @@
 package com.itesoft.ml;
 
 /**
- * Created by jfi on 18/05/2015.
+ * @author jfi
  */
-public interface Visitor {
+public interface Visitor extends Importer {
 
-    void visit(InvoiceFileImporter fileImporter) throws ApplicationException;
+    public void visit(FileImporter fileImporter) throws ApplicationException;
 
-    void visit(BatchFileImporter fileImporter) throws ApplicationException;
+    //public void visit(BatchFileImporter fileImporter) throws ApplicationException;
+
+
+
 
 
 }
